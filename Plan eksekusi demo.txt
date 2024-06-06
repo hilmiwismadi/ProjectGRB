@@ -1,0 +1,47 @@
+1. Pencarian dengan user input Dynamic body script [PUT]
+URI = /filterBooks
+{
+    "filters": {
+        "title": "Economics"
+    }
+}
+
+2. Pencarian dengan user input URI [GET]
+/search?keyword=Tales
+
+3. Memperlihatkan database keseluruhan [GET]
+rating diatas nilai tertentu /review/3
+buku keseluruhan /book/18
+
+4. Melakukan DML UPDATE Query [PUT]
+Liatin dulu inventory/10 [GET]
+Masukin /inventory/update/10 [PUT]
+	{
+    "quantity" : 100
+}
+Trus cek lagi inventory/10 [GET]
+
+5. Kalau mau update buku terbaru [POST]
+di URI /book
+script
+	{
+        "book_id": 21,
+        "book_name": "Power Secret",
+        "title": "48 Laws of Power",
+        "author_id": 7,
+        "publisher_name": "Oxford",
+        "isbn": "7689012318947",
+        "price": "$39.99",
+        "pages": 480,
+        "publication_year": "2012-12-31T17:00:00.000Z",
+        "category_id": 4,
+        "stock_quantity": 100,
+        "inventory_id": 20
+}
+
+trus dicek udah keupdate tau belum
+
+6. kalo mau hapus tingga ke URI /book/21 [DELETE]
+
+
+
